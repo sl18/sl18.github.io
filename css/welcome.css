@@ -1,0 +1,14 @@
+.first, .second {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.first {
+    font-size: 2em;
+    color: blue;
+    top: 100px;
+    left: 100px;
+}
+.second {
+    font-size: 1.5em;
+}

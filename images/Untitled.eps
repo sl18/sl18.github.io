@@ -1,0 +1,2061 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%APL_DSC_Encoding: UTF8
+%APLProducer: (Version 10.14.5 (Build 18F132) Quartz PS Context)
+%%Title: (Unknown)
+%%Creator: (Unknown)
+%%CreationDate: (Unknown)
+%%For: (Unknown)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox: 0 0 567 567
+%%EndComments
+%%BeginProlog
+%%BeginFile: cg-pdf.ps
+%%Copyright: Copyright 2000-2004 Apple Computer Incorporated.
+%%Copyright: All Rights Reserved.
+currentpacking true setpacking
+/cg_md 141 dict def
+cg_md begin
+/L3? languagelevel 3 ge def
+/bd{bind def}bind def
+/ld{load def}bd
+/xs{exch store}bd
+/xd{exch def}bd
+/cmmtx matrix def
+mark
+/sc/setcolor
+/scs/setcolorspace
+/dr/defineresource
+/fr/findresource
+/T/true
+/F/false
+/d/setdash
+/w/setlinewidth
+/J/setlinecap
+/j/setlinejoin
+/M/setmiterlimit
+/i/setflat
+/rc/rectclip
+/rf/rectfill
+/rs/rectstroke
+/f/fill
+/f*/eofill
+/sf/selectfont
+/s/show
+%/as/ashow
+/xS/xshow
+/yS/yshow
+/xyS/xyshow
+/S/stroke
+/m/moveto
+/l/lineto
+/c/curveto
+/h/closepath
+/n/newpath
+/q/gsave
+/Q/grestore
+counttomark 2 idiv
+%dup (number of ld's = )print == flush	% *** how many 
+{ld}repeat pop
+/SC{	% CSname
+    /ColorSpace fr scs
+}bd
+/sopr /setoverprint where{pop/setoverprint}{/pop}ifelse ld
+/soprm /setoverprintmode where{pop/setoverprintmode}{/pop}ifelse ld
+/cgmtx matrix def
+/sdmtx{cgmtx currentmatrix pop}bd
+/CM {cgmtx setmatrix}bd		% pop the ctm: our gstate ctm on host is now identity
+/cm {cmmtx astore CM concat}bd	% reset the matrix and then concat
+/W{clip newpath}bd
+/W*{eoclip newpath}bd
+
+statusdict begin product end dup (HP) anchorsearch{
+    pop pop pop	% pop off the search results
+    true
+}{
+    pop	% previous search result
+   (hp) anchorsearch{
+	pop pop true
+    }{
+	pop false
+    }ifelse
+}ifelse
+
+{	% HP is the product: we use this method of stroking because of a bug in their clone printers with certain T3 fonts
+    { 
+	{ % charCode Wx Wy
+	    pop pop % charCode
+	    (0)dup 0 4 -1 roll put
+	    F charpath
+	}cshow
+    }
+}{
+    {F charpath}
+}ifelse
+/cply exch bd
+/cps {cply stroke}bd
+/pgsave 0 def
+/bp{/pgsave save store}bd
+/ep{pgsave restore showpage}def		% dont' bind
+/re{4 2 roll m 1 index 0 rlineto 0 exch rlineto neg 0 rlineto h}bd
+
+/scrdict 10 dict def
+/scrmtx matrix def
+/patarray 0 def
+/createpat{patarray 3 1 roll put}bd
+/makepat{
+scrmtx astore pop
+gsave
+initgraphics
+CM 
+patarray exch get
+scrmtx
+makepattern
+grestore
+setpattern
+}bd
+
+/cg_BeginEPSF{
+    userdict save/cg_b4_Inc_state exch put
+    userdict/cg_endepsf/cg_EndEPSF load put
+    count userdict/cg_op_count 3 -1 roll put 
+    countdictstack dup array dictstack userdict/cg_dict_array 3 -1 roll put
+    3 sub{end}repeat
+    /showpage {} def
+    0 setgray 0 setlinecap 1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [] 0 setdash newpath
+    false setstrokeadjust false setoverprint	% don't use F
+}bd
+/cg_EndEPSF{
+  countdictstack 3 sub { end } repeat
+  cg_dict_array 3 1 index length 3 sub getinterval
+  {begin}forall
+  count userdict/cg_op_count get sub{pop}repeat
+  userdict/cg_b4_Inc_state get restore
+  F setpacking
+}bd
+
+/cg_biproc{currentfile/RunLengthDecode filter}bd
+/cg_aiproc{currentfile/ASCII85Decode filter/RunLengthDecode filter}bd
+/ImageDataSource 0 def
+L3?{
+    /cg_mibiproc{pop pop/ImageDataSource{cg_biproc}def}bd
+    /cg_miaiproc{pop pop/ImageDataSource{cg_aiproc}def}bd
+}{
+    /ImageBandMask 0 def
+    /ImageBandData 0 def
+    /cg_mibiproc{
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/RunLengthDecode filter dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+    /cg_miaiproc{	
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/ASCII85Decode filter/RunLengthDecode filter
+	    dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+}ifelse
+/imsave 0 def
+/BI{save/imsave xd mark}bd
+/EI{imsave restore}bd
+/ID{
+counttomark 2 idiv
+dup 2 add	% leave room for imagetype and imagematrix
+dict begin
+{def} repeat
+pop		% remove mark
+/ImageType 1 def
+/ImageMatrix[Width 0 0 Height neg 0 Height]def
+currentdict dup/ImageMask known{ImageMask}{F}ifelse exch
+% currentdict on stack
+L3?{
+    dup/MaskedImage known
+    { 
+	pop
+	<<
+	    /ImageType 3
+	    /InterleaveType 2
+	    /DataDict currentdict
+	    /MaskDict
+	    <<  /ImageType 1
+		/Width Width
+		/Height Height
+		/ImageMatrix ImageMatrix
+		/BitsPerComponent 1
+		/Decode [0 1]
+		currentdict/Interpolate known
+		{/Interpolate Interpolate}if
+	    >>
+	>>
+    }if
+}if
+exch
+{imagemask}{image}ifelse	
+end	% pop imagedict from dict stack
+}bd
+
+/cguidfix{statusdict begin mark version end
+{cvr}stopped{cleartomark 0}{exch pop}ifelse
+2012 lt{dup findfont dup length dict begin
+{1 index/FID ne 2 index/UniqueID ne and
+{def} {pop pop} ifelse}forall
+currentdict end definefont pop
+}{pop}ifelse
+}bd
+/t_array 0 def
+/t_i 0 def
+/t_c 1 string def
+/x_proc{ % x y
+    exch t_array t_i get add exch moveto
+    /t_i t_i 1 add store
+}bd
+/y_proc{ % x y
+    t_array t_i get add moveto
+    /t_i t_i 1 add store
+}bd
+/xy_proc{
+        % x y
+	t_array t_i 2 copy 1 add get 3 1 roll get 
+	4 -1 roll add 3 1 roll add moveto
+	/t_i t_i 2 add store
+}bd
+/sop 0 def		% don't bind sop
+/cp_proc/x_proc ld 	% default moveto proc is for xwidths only
+/base_charpath		% string array
+{
+    /t_array xs
+    /t_i 0 def
+    { % char
+	t_c 0 3 -1 roll put
+        currentpoint
+	t_c cply sop
+        cp_proc
+    }forall
+    /t_array 0 def
+}bd
+/sop/stroke ld		% default sop is stroke. Done here so we don't bind in /base_charpath 
+
+% default sop is stroke
+/nop{}def
+/xsp/base_charpath ld
+/ysp{/cp_proc/y_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xysp{/cp_proc/xy_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xmp{/sop/nop ld /cp_proc/x_proc ld base_charpath/sop/stroke ld}bd
+/ymp{/sop/nop ld /cp_proc/y_proc ld base_charpath/sop/stroke ld}bd
+/xymp{/sop/nop ld /cp_proc/xy_proc ld base_charpath/sop/stroke ld}bd
+/refnt{ % newname encoding fontname
+findfont dup length dict copy dup
+/Encoding 4 -1 roll put 
+definefont pop
+}bd
+/renmfont{ % newname fontname
+findfont dup length dict copy definefont pop
+}bd
+
+L3? dup dup{save exch}if
+
+% languagelevel2 ONLY code goes here
+
+/Range 0 def
+/DataSource 0 def
+/val 0 def
+/nRange 0 def
+/mulRange 0 def
+/d0 0 def
+/r0 0 def
+/di 0 def
+/ri 0 def
+/a0 0 def
+/a1 0 def
+/r1 0 def
+/r2 0 def
+/dx 0 def
+/Nsteps 0 def
+/sh3tp 0 def
+/ymax 0 def
+/ymin 0 def
+/xmax 0 def
+/xmin 0 def
+
+/setupFunEval % funDict -- 	% this calculates and sets up a function dict for evaulation.
+{
+    begin
+	/nRange Range length 2 idiv store
+	/mulRange   % precompute the range data needed to map a sample value from the table to a range value
+		    % this data looks like [ range0mul range0min range1mul range1min ... rangeN-1mul rangeN-1min ]
+	[ 
+	    0 1 nRange 1 sub
+	    { % index
+		    2 mul/nDim2 xd		% 2*dimension# we are dealing with
+		    Range nDim2 get		% ymin
+		    Range nDim2 1 add get	% ymin ymax 
+		    1 index sub			% ymin (ymax-ymin)
+						% xmin = 0, xmax = 255 (2^bitspersample - 1)
+		    255 div			% ymin (ymax-ymin)/(xmax - xmin)
+		    exch			% (ymax-ymin)/(xmax - xmin) ymin
+	    }for
+	]store
+    end
+}bd
+
+/FunEval % val1 fundict -> comp1 comp2 ... compN
+{
+    begin
+	% the value passed in is the base index into the table
+	nRange mul /val xd	% compute the actual index to the table
+				% since there are nRange entries per base index
+	0 1 nRange 1 sub
+	{
+	    dup 2 mul/nDim2 xd % dim
+	    val	% base value to use to do our lookup
+	    add DataSource exch get %  lookedupval
+	    mulRange nDim2 get mul 	% lookedupval*(ymax-ymin)/(xmax-xmin)
+	    mulRange nDim2 1 add get % lookedupval*(ymax-ymin)/(xmax-xmin) ymin
+	    add % interpolated result
+	}for	% comp1 comp2 ... compN
+    end
+}bd
+
+/max % a b -> max(a, b)
+{
+	2 copy lt
+	{exch pop}{pop}ifelse
+}bd
+
+/sh2
+{	% emulation of shading type 2. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 x1 y1
+	3 index 3 index translate	% origin is now at beginning point of shading
+					% x0 y0 x1 y1
+	3 -1 roll sub	% x0 x1 y1-y0
+	3 1 roll exch 	% y1-y0 x1 x0
+	sub				% y1-y0 x1-x0
+	2 copy
+	dup mul exch dup mul add sqrt	% length of segment between two points
+	dup
+	scale  
+	atan	% atan (dy/dx)
+	%dup (rotation angle = )print ==
+	rotate		% now line between 0,0 and 1,0 is the line perpendicular to which the axial lines are drawn					
+	
+	/Function load setupFunEval	% may need to setup function dictionary by calling setupFunEval
+	
+	% this is now specific to axial shadings. Compute the maximum bounds to fill
+	clippath {pathbbox}stopped {0 0 0 0}if newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+	currentdict/Extend known
+	{
+		/Extend load 0 get
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			xmin ymin xmin abs ymax ymin sub rectfill
+		}if
+	}if
+	% paint the rects. The sampling frequency is that of our table
+	/Nsteps/Function load/Size get 0 get 1 sub store
+	/dx 1 Nsteps div store
+	gsave
+		/di ymax ymin sub store
+		/Function load
+		% loop Nsteps + 1 times, incrementing the index by 1 each time
+		0 1 Nsteps
+		{
+			1 index FunEval sc
+			0 ymin dx di rectfill
+			dx 0 translate
+		}for
+		pop	% pop our function
+	grestore	% origin is back to start point
+	currentdict/Extend known
+	{
+		/Extend load 1 get
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			1 ymin xmax 1 sub abs ymax ymin sub rectfill
+		}if
+	}if
+}bd
+
+/shp	% this paints our shape for shading type 3
+{	% x1 r1 x0 r0 -
+	4 copy
+
+	% fill interior arc
+	dup 0 gt{
+		0 exch a1 a0 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a0 a1 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+
+	% fill exterior arc
+	dup 0 gt{
+		0 exch a0 a1 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a1 a0 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+}bd
+
+/calcmaxs
+{	% calculate maximum distance vector from origin to corner points
+	% of bbox
+	xmin dup mul ymin dup mul add sqrt		% (xmin2 + ymin2)
+	xmax dup mul ymin dup mul add sqrt		% (xmax2 + ymin2)
+	xmin dup mul ymax dup mul add sqrt		% (xmin2 + ymax2)
+	xmax dup mul ymax dup mul add sqrt		% (xmax2 + ymax2)
+	max max max								% maximum value
+}bd
+
+/sh3
+{	% emulation of shading type 3. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 r1 x1 y1 r2
+	5 index 5 index translate	% origin is now at first circle origin
+	3 -1 roll 6 -1 roll sub		% y0 r1 y1 r2 dx
+	3 -1 roll 5 -1 roll sub		% r1 r2 dx dy
+	2 copy dup mul exch dup mul add sqrt
+	/dx xs						% r1 r2 dx dy
+	2 copy 0 ne exch 0 ne or
+	{
+		% r1 r2 dx dy
+		exch atan rotate	% we are now rotated so dy is zero and positive values of dx move us as expected
+	}{
+		pop pop
+	}ifelse
+	% r1 r2		
+	/r2 xs
+	/r1 xs
+	/Function load 
+	dup/Size get 0 get 1 sub	% this is the size of our table minus 1
+	/Nsteps xs		% at some point we should optimize this better so NSteps is based on needed steps for the device
+	setupFunEval		% may need to setup function dictionary by calling setupFunEval
+	% determine the case:
+	% case 0: circle1 inside circle2
+	% case 1: circle 2 inside circle 1
+	% case 2: r1 = r2 
+	% case 3: r1 != r2
+	dx r2 add r1 lt{
+		% circle 2 inside of circle 1
+		0 
+	}{
+		dx r1 add r2 le
+		{ % circle 1 inside of circle 2
+			1
+		}{ % circles don't contain each other
+			r1 r2 eq
+			{	% equal
+				2
+			}{ % r1 != r2
+				3
+			}ifelse		
+		}ifelse
+	}ifelse
+	/sh3tp xs		% sh3tp has the number of our different cases
+	clippath {pathbbox}stopped {0 0 0 0}if 
+	newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+
+	% Arc angle atan( sqrt((dx*dx + dy*dy) - dr*dr), dr)
+	dx dup mul r2 r1 sub dup mul sub dup 0 gt
+	{
+		sqrt r2 r1 sub atan
+		/a0 exch 180 exch sub store 
+		/a1 a0 neg store 
+	}{
+		pop
+		/a0 0 store
+		/a1 360 store		
+	}ifelse		
+
+	currentdict/Extend known
+	{
+		/Extend load 0 get r1 0 gt and	% no need to extend if the radius of the first end is 0
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{	% case 0
+					dx 0 r1 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				}
+				{	% case 1
+					r1 0 gt{0 0 r1 0 360 arc fill}if
+				}
+				{	% case 2
+					% r1 == r2, extend 0
+					% r3 = r, x3 = -(abs(minx) + r), x1 = 0
+				
+					% x(i+1) r(i+1) x(i) r(i) shp
+					0 r1 xmin abs r1 add neg r1 shp
+				}
+				{	% case 3
+					% no containment, r1 != r2
+				
+					r2 r1 gt{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1
+						r1 neg r2 r1 sub div dx mul	% this is point of beginning circle
+						0	% point of ending circle
+						shp	% takes x(i+1) r(i+1) x(i) r(i)
+					}{	% the first circle is the bigger of the two
+						% we find a circle on our line which is outside the bbox in the
+						% negative direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1 calcmaxs	% 0 r1 maxs
+						dup
+						% calculating xs: (-(maxs+r2)*x2)/(x2-(r1-r2))
+						r2 add dx mul dx r1 r2 sub sub div
+						neg				% maxs xs'
+						exch 1 index	% xs' maxs xs'
+						abs exch sub
+						shp
+					}ifelse
+				} 
+			}sh3tp get exec	% execute the extend at beginning proc for our shading type
+		}if
+	}if
+
+	% now do the shading
+	/d0 0 store
+	/r0 r1 store
+	/di dx Nsteps div store
+	/ri r2 r1 sub Nsteps div store 
+	/Function load 
+	0 1 Nsteps
+	{	% function t(i)
+		1 index FunEval sc
+		d0 di add r0 ri add d0 r0 shp
+		{
+		% fill interior arc
+		d0 0 r0 a1 a0 arc
+		d0 di add 0 r0 ri add a0 a1 arcn
+		fill
+		
+		% fill exterior arc
+		d0 0 r0 a0 a1 arc
+		d0 di add 0 r0 ri add a1 a0 arcn
+		fill
+		}pop
+		
+		% advance to next
+		/d0 d0 di add store
+		/r0 r0 ri add store
+	}for
+	pop	% pop our function dict
+
+	% handle Extend
+	currentdict/Extend known
+	{
+		/Extend load 1 get r2 0 gt and	% no need to extend if the radius of the last end is 0
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{
+					dx 0 r2 0 360 arc fill
+				} 
+				{
+					dx 0 r2 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				} 
+				{	% r1 == r2, extend 1
+					% r3 = r, x3 = (abs(xmax) + r), x1 = dx
+					% x(i+1) r(i+1) x(i) r(i) shp
+					xmax abs r1 add r1 dx r1 shp
+				}	
+				{	% no containment, r1 != r2
+			
+					r2 r1 gt{
+						% we find a circle on our line which is outside the bbox in the
+						% positive direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						calcmaxs dup	% maxs maxs
+						% calculating xs: ((maxs+r1)*x2)/(x2-(r2-r1))
+						r1 add dx mul dx r2 r1 sub sub div	% maxs xs
+						exch 1 index	% xs maxs xs
+						exch sub
+						dx r2
+						shp
+					}{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						r1 neg r2 r1 sub div dx mul	% this is point of ending circle
+						0		% radius of ending circle
+						dx 		% point of starting circle
+						r2		% radius of starting circle
+						shp
+					}ifelse
+				}
+			}			
+			sh3tp get exec	% execute the extend at end proc for our shading type
+		}if
+	}if
+}bd
+/sh		% emulation of shfill operator for type 2 and type 3 shadings based on type 0 functions
+{	% shadingDict --
+	begin
+		/ShadingType load dup dup 2 eq exch 3 eq or
+		{	% shadingtype
+			gsave
+				newpath
+				/ColorSpace load scs
+				currentdict/BBox known
+				{
+					/BBox load aload pop	% llx lly urx ury
+					2 index sub				% llx lly urx ury-lly
+					3 index					% llx lly urx ury-lly llx
+					3 -1 roll exch sub 
+					exch rectclip
+				}if
+				2 eq
+				{sh2}{sh3}ifelse
+			grestore
+		}{
+			% shadingtype
+			pop 
+			(DEBUG: shading type unimplemented\n)print flush
+		}ifelse
+	end
+}bd
+
+% end of language level 2 ONLY code
+
+{restore}if not dup{save exch}if
+% languagelevel3 ONLY code goes here
+	L3?{	% we do these loads conditionally or else they will fail on a level 2 printer
+		/sh/shfill ld
+		/csq/clipsave ld
+		/csQ/cliprestore ld
+	}if
+{restore}if
+
+%currentdict dup maxlength exch length sub (number of extra slots in md = )print == flush	% *** how many entries are free
+end
+setpacking
+% count 0 ne { pstack(***extras on stack during prolog execution***\n)print flush}if	% *** BARK if anything is left on stack
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 0 0 567 567
+%%BeginPageSetup
+cg_md begin
+bp
+sdmtx
+[ /CIEBasedABC 4 dict dup begin 
+/WhitePoint [ 0.9505 1.0000 1.0891 ] def 
+/DecodeABC [ 
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+] def 
+/MatrixABC [ 0.4124 0.2126 0.0193 0.3576 0.7151 0.1192 0.1805 0.0722 0.9508 ] def 
+/RangeLMN [ 0.0 0.9505 0.0 1.0000 0.0 1.0891 ] def 
+end ] /Cs1 exch/ColorSpace dr pop
+%%EndPageSetup
+/Cs1 SC
+0 0 0 sc
+q
+0 0 566.92914 566.92914 rc
+523.84253 169.55434 m
+526.32391 169.55434 528.33545 171.56587 528.33545 174.04724 c
+528.33545 176.52861 526.32391 178.54016 523.84253 178.54016 c
+521.36115 178.54016 519.34961 176.52861 519.34961 174.04724 c
+519.34961 171.56587 521.36115 169.55434 523.84253 169.55434 c
+f
+523.84253 150.84567 m
+526.32391 150.84567 528.33545 152.85721 528.33545 155.33858 c
+528.33545 157.81995 526.32391 159.8315 523.84253 159.8315 c
+521.36115 159.8315 519.34961 157.81995 519.34961 155.33858 c
+519.34961 152.85721 521.36115 150.84567 523.84253 150.84567 c
+f
+523.84253 132.13701 m
+526.32391 132.13701 528.33545 134.14856 528.33545 136.62993 c
+528.33545 139.11128 526.32391 141.12283 523.84253 141.12283 c
+521.36115 141.12283 519.34961 139.11128 519.34961 136.62993 c
+519.34961 134.14856 521.36115 132.13701 523.84253 132.13701 c
+f
+505.13385 169.55434 m
+507.61523 169.55434 509.62677 171.56587 509.62677 174.04724 c
+509.62677 176.52861 507.61523 178.54016 505.13385 178.54016 c
+502.6525 178.54016 500.64093 176.52861 500.64093 174.04724 c
+500.64093 171.56587 502.6525 169.55434 505.13385 169.55434 c
+f
+505.13385 150.84567 m
+507.61523 150.84567 509.62677 152.85721 509.62677 155.33858 c
+509.62677 157.81995 507.61523 159.8315 505.13385 159.8315 c
+502.6525 159.8315 500.64093 157.81995 500.64093 155.33858 c
+500.64093 152.85721 502.6525 150.84567 505.13385 150.84567 c
+f
+505.13385 132.13701 m
+507.61523 132.13701 509.62677 134.14856 509.62677 136.62993 c
+509.62677 139.11128 507.61523 141.12283 505.13385 141.12283 c
+502.6525 141.12283 500.64093 139.11128 500.64093 136.62993 c
+500.64093 134.14856 502.6525 132.13701 505.13385 132.13701 c
+f
+486.4252 169.55434 m
+488.90656 169.55434 490.91812 171.56587 490.91812 174.04724 c
+490.91812 176.52861 488.90656 178.54016 486.4252 178.54016 c
+483.94382 178.54016 481.93228 176.52861 481.93228 174.04724 c
+481.93228 171.56587 483.94382 169.55434 486.4252 169.55434 c
+f
+486.4252 150.84567 m
+488.90656 150.84567 490.91812 152.85721 490.91812 155.33858 c
+490.91812 157.81995 488.90656 159.8315 486.4252 159.8315 c
+483.94382 159.8315 481.93228 157.81995 481.93228 155.33858 c
+481.93228 152.85721 483.94382 150.84567 486.4252 150.84567 c
+f
+486.4252 132.13701 m
+488.90656 132.13701 490.91812 134.14856 490.91812 136.62993 c
+490.91812 139.11128 488.90656 141.12283 486.4252 141.12283 c
+483.94382 141.12283 481.93228 139.11128 481.93228 136.62993 c
+481.93228 134.14856 483.94382 132.13701 486.4252 132.13701 c
+f
+467.71652 153.78809 m
+468.57285 153.78809 469.26703 154.48227 469.26703 155.33858 c
+469.26703 156.1949 468.57285 156.88908 467.71652 156.88908 c
+466.86023 156.88908 466.16605 156.1949 466.16605 155.33858 c
+466.16605 154.48227 466.86023 153.78809 467.71652 153.78809 c
+f
+430.29922 263.09763 m
+432.78058 263.09763 434.79211 265.10919 434.79211 267.59055 c
+434.79211 270.07193 432.78058 272.08347 430.29922 272.08347 c
+427.81784 272.08347 425.8063 270.07193 425.8063 267.59055 c
+425.8063 265.10919 427.81784 263.09763 430.29922 263.09763 c
+f
+430.29922 244.38898 m
+432.78058 244.38898 434.79211 246.40053 434.79211 248.8819 c
+434.79211 251.36325 432.78058 253.3748 430.29922 253.3748 c
+427.81784 253.3748 425.8063 251.36325 425.8063 248.8819 c
+425.8063 246.40053 427.81784 244.38898 430.29922 244.38898 c
+f
+430.29922 225.68031 m
+432.78058 225.68031 434.79211 227.69186 434.79211 230.17323 c
+434.79211 232.6546 432.78058 234.66614 430.29922 234.66614 c
+427.81784 234.66614 425.8063 232.6546 425.8063 230.17323 c
+425.8063 227.69186 427.81784 225.68031 430.29922 225.68031 c
+f
+430.29922 206.97165 m
+432.78058 206.97165 434.79211 208.9832 434.79211 211.46457 c
+434.79211 213.94594 432.78058 215.95747 430.29922 215.95747 c
+427.81784 215.95747 425.8063 213.94594 425.8063 211.46457 c
+425.8063 208.9832 427.81784 206.97165 430.29922 206.97165 c
+f
+430.29922 188.26299 m
+432.78058 188.26299 434.79211 190.27454 434.79211 192.75591 c
+434.79211 195.23727 432.78058 197.24883 430.29922 197.24883 c
+427.81784 197.24883 425.8063 195.23727 425.8063 192.75591 c
+425.8063 190.27454 427.81784 188.26299 430.29922 188.26299 c
+f
+430.29922 169.55434 m
+432.78058 169.55434 434.79211 171.56587 434.79211 174.04724 c
+434.79211 176.52861 432.78058 178.54016 430.29922 178.54016 c
+427.81784 178.54016 425.8063 176.52861 425.8063 174.04724 c
+425.8063 171.56587 427.81784 169.55434 430.29922 169.55434 c
+f
+430.29922 150.84567 m
+432.78058 150.84567 434.79211 152.85721 434.79211 155.33858 c
+434.79211 157.81995 432.78058 159.8315 430.29922 159.8315 c
+427.81784 159.8315 425.8063 157.81995 425.8063 155.33858 c
+425.8063 152.85721 427.81784 150.84567 430.29922 150.84567 c
+f
+430.29922 132.13701 m
+432.78058 132.13701 434.79211 134.14856 434.79211 136.62993 c
+434.79211 139.11128 432.78058 141.12283 430.29922 141.12283 c
+427.81784 141.12283 425.8063 139.11128 425.8063 136.62993 c
+425.8063 134.14856 427.81784 132.13701 430.29922 132.13701 c
+f
+411.59055 281.8063 m
+414.07193 281.8063 416.08347 283.81784 416.08347 286.29922 c
+416.08347 288.78058 414.07193 290.79211 411.59055 290.79211 c
+409.10919 290.79211 407.09763 288.78058 407.09763 286.29922 c
+407.09763 283.81784 409.10919 281.8063 411.59055 281.8063 c
+f
+411.59055 263.09763 m
+414.07193 263.09763 416.08347 265.10919 416.08347 267.59055 c
+416.08347 270.07193 414.07193 272.08347 411.59055 272.08347 c
+409.10919 272.08347 407.09763 270.07193 407.09763 267.59055 c
+407.09763 265.10919 409.10919 263.09763 411.59055 263.09763 c
+f
+411.59055 244.38898 m
+414.07193 244.38898 416.08347 246.40053 416.08347 248.8819 c
+416.08347 251.36325 414.07193 253.3748 411.59055 253.3748 c
+409.10919 253.3748 407.09763 251.36325 407.09763 248.8819 c
+407.09763 246.40053 409.10919 244.38898 411.59055 244.38898 c
+f
+411.59055 225.68031 m
+414.07193 225.68031 416.08347 227.69186 416.08347 230.17323 c
+416.08347 232.6546 414.07193 234.66614 411.59055 234.66614 c
+409.10919 234.66614 407.09763 232.6546 407.09763 230.17323 c
+407.09763 227.69186 409.10919 225.68031 411.59055 225.68031 c
+f
+411.59055 206.97165 m
+414.07193 206.97165 416.08347 208.9832 416.08347 211.46457 c
+416.08347 213.94594 414.07193 215.95747 411.59055 215.95747 c
+409.10919 215.95747 407.09763 213.94594 407.09763 211.46457 c
+407.09763 208.9832 409.10919 206.97165 411.59055 206.97165 c
+f
+411.59055 188.26299 m
+414.07193 188.26299 416.08347 190.27454 416.08347 192.75591 c
+416.08347 195.23727 414.07193 197.24883 411.59055 197.24883 c
+409.10919 197.24883 407.09763 195.23727 407.09763 192.75591 c
+407.09763 190.27454 409.10919 188.26299 411.59055 188.26299 c
+f
+411.59055 169.55434 m
+414.07193 169.55434 416.08347 171.56587 416.08347 174.04724 c
+416.08347 176.52861 414.07193 178.54016 411.59055 178.54016 c
+409.10919 178.54016 407.09763 176.52861 407.09763 174.04724 c
+407.09763 171.56587 409.10919 169.55434 411.59055 169.55434 c
+f
+411.59055 150.84567 m
+414.07193 150.84567 416.08347 152.85721 416.08347 155.33858 c
+416.08347 157.81995 414.07193 159.8315 411.59055 159.8315 c
+409.10919 159.8315 407.09763 157.81995 407.09763 155.33858 c
+407.09763 152.85721 409.10919 150.84567 411.59055 150.84567 c
+f
+411.59055 132.13701 m
+414.07193 132.13701 416.08347 134.14856 416.08347 136.62993 c
+416.08347 139.11128 414.07193 141.12283 411.59055 141.12283 c
+409.10919 141.12283 407.09763 139.11128 407.09763 136.62993 c
+407.09763 134.14856 409.10919 132.13701 411.59055 132.13701 c
+f
+392.8819 300.51495 m
+395.36325 300.51495 397.37482 302.52652 397.37482 305.00787 c
+397.37482 307.48923 395.36325 309.50079 392.8819 309.50079 c
+390.40051 309.50079 388.38898 307.48923 388.38898 305.00787 c
+388.38898 302.52652 390.40051 300.51495 392.8819 300.51495 c
+f
+392.8819 281.8063 m
+395.36325 281.8063 397.37482 283.81784 397.37482 286.29922 c
+397.37482 288.78058 395.36325 290.79211 392.8819 290.79211 c
+390.40051 290.79211 388.38898 288.78058 388.38898 286.29922 c
+388.38898 283.81784 390.40051 281.8063 392.8819 281.8063 c
+f
+392.8819 263.09763 m
+395.36325 263.09763 397.37482 265.10919 397.37482 267.59055 c
+397.37482 270.07193 395.36325 272.08347 392.8819 272.08347 c
+390.40051 272.08347 388.38898 270.07193 388.38898 267.59055 c
+388.38898 265.10919 390.40051 263.09763 392.8819 263.09763 c
+f
+392.8819 244.38898 m
+395.36325 244.38898 397.37482 246.40053 397.37482 248.8819 c
+397.37482 251.36325 395.36325 253.3748 392.8819 253.3748 c
+390.40051 253.3748 388.38898 251.36325 388.38898 248.8819 c
+388.38898 246.40053 390.40051 244.38898 392.8819 244.38898 c
+f
+392.8819 225.68031 m
+395.36325 225.68031 397.37482 227.69186 397.37482 230.17323 c
+397.37482 232.6546 395.36325 234.66614 392.8819 234.66614 c
+390.40051 234.66614 388.38898 232.6546 388.38898 230.17323 c
+388.38898 227.69186 390.40051 225.68031 392.8819 225.68031 c
+f
+392.8819 206.97165 m
+395.36325 206.97165 397.37482 208.9832 397.37482 211.46457 c
+397.37482 213.94594 395.36325 215.95747 392.8819 215.95747 c
+390.40051 215.95747 388.38898 213.94594 388.38898 211.46457 c
+388.38898 208.9832 390.40051 206.97165 392.8819 206.97165 c
+f
+392.8819 188.26299 m
+395.36325 188.26299 397.37482 190.27454 397.37482 192.75591 c
+397.37482 195.23727 395.36325 197.24883 392.8819 197.24883 c
+390.40051 197.24883 388.38898 195.23727 388.38898 192.75591 c
+388.38898 190.27454 390.40051 188.26299 392.8819 188.26299 c
+f
+392.8819 169.55434 m
+395.36325 169.55434 397.37482 171.56587 397.37482 174.04724 c
+397.37482 176.52861 395.36325 178.54016 392.8819 178.54016 c
+390.40051 178.54016 388.38898 176.52861 388.38898 174.04724 c
+388.38898 171.56587 390.40051 169.55434 392.8819 169.55434 c
+f
+392.8819 150.84567 m
+395.36325 150.84567 397.37482 152.85721 397.37482 155.33858 c
+397.37482 157.81995 395.36325 159.8315 392.8819 159.8315 c
+390.40051 159.8315 388.38898 157.81995 388.38898 155.33858 c
+388.38898 152.85721 390.40051 150.84567 392.8819 150.84567 c
+f
+392.8819 132.13701 m
+395.36325 132.13701 397.37482 134.14856 397.37482 136.62993 c
+397.37482 139.11128 395.36325 141.12283 392.8819 141.12283 c
+390.40051 141.12283 388.38898 139.11128 388.38898 136.62993 c
+388.38898 134.14856 390.40051 132.13701 392.8819 132.13701 c
+f
+374.17322 300.51495 m
+376.6546 300.51495 378.66614 302.52652 378.66614 305.00787 c
+378.66614 307.48923 376.6546 309.50079 374.17322 309.50079 c
+371.69186 309.50079 369.68033 307.48923 369.68033 305.00787 c
+369.68033 302.52652 371.69186 300.51495 374.17322 300.51495 c
+f
+374.17322 281.8063 m
+376.6546 281.8063 378.66614 283.81784 378.66614 286.29922 c
+378.66614 288.78058 376.6546 290.79211 374.17322 290.79211 c
+371.69186 290.79211 369.68033 288.78058 369.68033 286.29922 c
+369.68033 283.81784 371.69186 281.8063 374.17322 281.8063 c
+f
+374.17322 263.09763 m
+376.6546 263.09763 378.66614 265.10919 378.66614 267.59055 c
+378.66614 270.07193 376.6546 272.08347 374.17322 272.08347 c
+371.69186 272.08347 369.68033 270.07193 369.68033 267.59055 c
+369.68033 265.10919 371.69186 263.09763 374.17322 263.09763 c
+f
+374.17322 244.38898 m
+376.6546 244.38898 378.66614 246.40053 378.66614 248.8819 c
+378.66614 251.36325 376.6546 253.3748 374.17322 253.3748 c
+371.69186 253.3748 369.68033 251.36325 369.68033 248.8819 c
+369.68033 246.40053 371.69186 244.38898 374.17322 244.38898 c
+f
+374.17322 225.68031 m
+376.6546 225.68031 378.66614 227.69186 378.66614 230.17323 c
+378.66614 232.6546 376.6546 234.66614 374.17322 234.66614 c
+371.69186 234.66614 369.68033 232.6546 369.68033 230.17323 c
+369.68033 227.69186 371.69186 225.68031 374.17322 225.68031 c
+f
+374.17322 206.97165 m
+376.6546 206.97165 378.66614 208.9832 378.66614 211.46457 c
+378.66614 213.94594 376.6546 215.95747 374.17322 215.95747 c
+371.69186 215.95747 369.68033 213.94594 369.68033 211.46457 c
+369.68033 208.9832 371.69186 206.97165 374.17322 206.97165 c
+f
+374.17322 188.26299 m
+376.6546 188.26299 378.66614 190.27454 378.66614 192.75591 c
+378.66614 195.23727 376.6546 197.24883 374.17322 197.24883 c
+371.69186 197.24883 369.68033 195.23727 369.68033 192.75591 c
+369.68033 190.27454 371.69186 188.26299 374.17322 188.26299 c
+f
+374.17322 169.55434 m
+376.6546 169.55434 378.66614 171.56587 378.66614 174.04724 c
+378.66614 176.52861 376.6546 178.54016 374.17322 178.54016 c
+371.69186 178.54016 369.68033 176.52861 369.68033 174.04724 c
+369.68033 171.56587 371.69186 169.55434 374.17322 169.55434 c
+f
+374.17322 150.84567 m
+376.6546 150.84567 378.66614 152.85721 378.66614 155.33858 c
+378.66614 157.81995 376.6546 159.8315 374.17322 159.8315 c
+371.69186 159.8315 369.68033 157.81995 369.68033 155.33858 c
+369.68033 152.85721 371.69186 150.84567 374.17322 150.84567 c
+f
+374.17322 132.13701 m
+376.6546 132.13701 378.66614 134.14856 378.66614 136.62993 c
+378.66614 139.11128 376.6546 141.12283 374.17322 141.12283 c
+371.69186 141.12283 369.68033 139.11128 369.68033 136.62993 c
+369.68033 134.14856 371.69186 132.13701 374.17322 132.13701 c
+f
+355.46457 300.51495 m
+357.94592 300.51495 359.95749 302.52652 359.95749 305.00787 c
+359.95749 307.48923 357.94592 309.50079 355.46457 309.50079 c
+352.98318 309.50079 350.97165 307.48923 350.97165 305.00787 c
+350.97165 302.52652 352.98318 300.51495 355.46457 300.51495 c
+f
+355.46457 281.8063 m
+357.94592 281.8063 359.95749 283.81784 359.95749 286.29922 c
+359.95749 288.78058 357.94592 290.79211 355.46457 290.79211 c
+352.98318 290.79211 350.97165 288.78058 350.97165 286.29922 c
+350.97165 283.81784 352.98318 281.8063 355.46457 281.8063 c
+f
+355.46457 263.09763 m
+357.94592 263.09763 359.95749 265.10919 359.95749 267.59055 c
+359.95749 270.07193 357.94592 272.08347 355.46457 272.08347 c
+352.98318 272.08347 350.97165 270.07193 350.97165 267.59055 c
+350.97165 265.10919 352.98318 263.09763 355.46457 263.09763 c
+f
+336.75592 281.8063 m
+339.23727 281.8063 341.24881 283.81784 341.24881 286.29922 c
+341.24881 288.78058 339.23727 290.79211 336.75592 290.79211 c
+334.27454 290.79211 332.263 288.78058 332.263 286.29922 c
+332.263 283.81784 334.27454 281.8063 336.75592 281.8063 c
+f
+336.75592 263.09763 m
+339.23727 263.09763 341.24881 265.10919 341.24881 267.59055 c
+341.24881 270.07193 339.23727 272.08347 336.75592 272.08347 c
+334.27454 272.08347 332.263 270.07193 332.263 267.59055 c
+332.263 265.10919 334.27454 263.09763 336.75592 263.09763 c
+f
+318.04724 358.86096 m
+319.30252 358.86096 320.32013 359.87857 320.32013 361.13385 c
+320.32013 362.38913 319.30252 363.40674 318.04724 363.40674 c
+316.79196 363.40674 315.77435 362.38913 315.77435 361.13385 c
+315.77435 359.87857 316.79196 358.86096 318.04724 358.86096 c
+f
+318.04724 338.90134 m
+319.99341 338.90134 321.57111 340.47903 321.57111 342.4252 c
+321.57111 344.37137 319.99341 345.94904 318.04724 345.94904 c
+316.10107 345.94904 314.52338 344.37137 314.52338 342.4252 c
+314.52338 340.47903 316.10107 338.90134 318.04724 338.90134 c
+f
+318.04724 320.19269 m
+319.99341 320.19269 321.57111 321.77036 321.57111 323.71652 c
+321.57111 325.66272 319.99341 327.24039 318.04724 327.24039 c
+316.10107 327.24039 314.52338 325.66272 314.52338 323.71652 c
+314.52338 321.77036 316.10107 320.19269 318.04724 320.19269 c
+f
+318.04724 301.48401 m
+319.99341 301.48401 321.57111 303.06171 321.57111 305.00787 c
+321.57111 306.95404 319.99341 308.53174 318.04724 308.53174 c
+316.10107 308.53174 314.52338 306.95404 314.52338 305.00787 c
+314.52338 303.06171 316.10107 301.48401 318.04724 301.48401 c
+f
+318.04724 282.77536 m
+319.99341 282.77536 321.57111 284.35303 321.57111 286.29922 c
+321.57111 288.24539 319.99341 289.82306 318.04724 289.82306 c
+316.10107 289.82306 314.52338 288.24539 314.52338 286.29922 c
+314.52338 284.35303 316.10107 282.77536 318.04724 282.77536 c
+f
+318.04724 263.09763 m
+320.52863 263.09763 322.54016 265.10919 322.54016 267.59055 c
+322.54016 270.07193 320.52863 272.08347 318.04724 272.08347 c
+315.56589 272.08347 313.55432 270.07193 313.55432 267.59055 c
+313.55432 265.10919 315.56589 263.09763 318.04724 263.09763 c
+f
+318.04724 244.38898 m
+320.52863 244.38898 322.54016 246.40053 322.54016 248.8819 c
+322.54016 251.36325 320.52863 253.3748 318.04724 253.3748 c
+315.56589 253.3748 313.55432 251.36325 313.55432 248.8819 c
+313.55432 246.40053 315.56589 244.38898 318.04724 244.38898 c
+f
+318.04724 225.68031 m
+320.52863 225.68031 322.54016 227.69186 322.54016 230.17323 c
+322.54016 232.6546 320.52863 234.66614 318.04724 234.66614 c
+315.56589 234.66614 313.55432 232.6546 313.55432 230.17323 c
+313.55432 227.69186 315.56589 225.68031 318.04724 225.68031 c
+f
+318.04724 206.97165 m
+320.52863 206.97165 322.54016 208.9832 322.54016 211.46457 c
+322.54016 213.94594 320.52863 215.95747 318.04724 215.95747 c
+315.56589 215.95747 313.55432 213.94594 313.55432 211.46457 c
+313.55432 208.9832 315.56589 206.97165 318.04724 206.97165 c
+f
+318.04724 188.26299 m
+320.52863 188.26299 322.54016 190.27454 322.54016 192.75591 c
+322.54016 195.23727 320.52863 197.24883 318.04724 197.24883 c
+315.56589 197.24883 313.55432 195.23727 313.55432 192.75591 c
+313.55432 190.27454 315.56589 188.26299 318.04724 188.26299 c
+f
+318.04724 169.55434 m
+320.52863 169.55434 322.54016 171.56587 322.54016 174.04724 c
+322.54016 176.52861 320.52863 178.54016 318.04724 178.54016 c
+315.56589 178.54016 313.55432 176.52861 313.55432 174.04724 c
+313.55432 171.56587 315.56589 169.55434 318.04724 169.55434 c
+f
+318.04724 150.84567 m
+320.52863 150.84567 322.54016 152.85721 322.54016 155.33858 c
+322.54016 157.81995 320.52863 159.8315 318.04724 159.8315 c
+315.56589 159.8315 313.55432 157.81995 313.55432 155.33858 c
+313.55432 152.85721 315.56589 150.84567 318.04724 150.84567 c
+f
+318.04724 132.13701 m
+320.52863 132.13701 322.54016 134.14856 322.54016 136.62993 c
+322.54016 139.11128 320.52863 141.12283 318.04724 141.12283 c
+315.56589 141.12283 313.55432 139.11128 313.55432 136.62993 c
+313.55432 134.14856 315.56589 132.13701 318.04724 132.13701 c
+f
+299.33859 357.98001 m
+301.08041 357.98001 302.49243 359.39203 302.49243 361.13385 c
+302.49243 362.87567 301.08041 364.28772 299.33859 364.28772 c
+297.59677 364.28772 296.18472 362.87567 296.18472 361.13385 c
+296.18472 359.39203 297.59677 357.98001 299.33859 357.98001 c
+f
+299.33859 337.93228 m
+301.81995 337.93228 303.83148 339.94382 303.83148 342.4252 c
+303.83148 344.90656 301.81995 346.91812 299.33859 346.91812 c
+296.85721 346.91812 294.84567 344.90656 294.84567 342.4252 c
+294.84567 339.94382 296.85721 337.93228 299.33859 337.93228 c
+f
+299.33859 319.22363 m
+301.81995 319.22363 303.83148 321.23517 303.83148 323.71652 c
+303.83148 326.19791 301.81995 328.20944 299.33859 328.20944 c
+296.85721 328.20944 294.84567 326.19791 294.84567 323.71652 c
+294.84567 321.23517 296.85721 319.22363 299.33859 319.22363 c
+f
+299.33859 300.51495 m
+301.81995 300.51495 303.83148 302.52652 303.83148 305.00787 c
+303.83148 307.48923 301.81995 309.50079 299.33859 309.50079 c
+296.85721 309.50079 294.84567 307.48923 294.84567 305.00787 c
+294.84567 302.52652 296.85721 300.51495 299.33859 300.51495 c
+f
+299.33859 281.8063 m
+301.81995 281.8063 303.83148 283.81784 303.83148 286.29922 c
+303.83148 288.78058 301.81995 290.79211 299.33859 290.79211 c
+296.85721 290.79211 294.84567 288.78058 294.84567 286.29922 c
+294.84567 283.81784 296.85721 281.8063 299.33859 281.8063 c
+f
+299.33859 263.09763 m
+301.81995 263.09763 303.83148 265.10919 303.83148 267.59055 c
+303.83148 270.07193 301.81995 272.08347 299.33859 272.08347 c
+296.85721 272.08347 294.84567 270.07193 294.84567 267.59055 c
+294.84567 265.10919 296.85721 263.09763 299.33859 263.09763 c
+f
+299.33859 244.38898 m
+301.81995 244.38898 303.83148 246.40053 303.83148 248.8819 c
+303.83148 251.36325 301.81995 253.3748 299.33859 253.3748 c
+296.85721 253.3748 294.84567 251.36325 294.84567 248.8819 c
+294.84567 246.40053 296.85721 244.38898 299.33859 244.38898 c
+f
+299.33859 225.68031 m
+301.81995 225.68031 303.83148 227.69186 303.83148 230.17323 c
+303.83148 232.6546 301.81995 234.66614 299.33859 234.66614 c
+296.85721 234.66614 294.84567 232.6546 294.84567 230.17323 c
+294.84567 227.69186 296.85721 225.68031 299.33859 225.68031 c
+f
+299.33859 206.97165 m
+301.81995 206.97165 303.83148 208.9832 303.83148 211.46457 c
+303.83148 213.94594 301.81995 215.95747 299.33859 215.95747 c
+296.85721 215.95747 294.84567 213.94594 294.84567 211.46457 c
+294.84567 208.9832 296.85721 206.97165 299.33859 206.97165 c
+f
+299.33859 188.26299 m
+301.81995 188.26299 303.83148 190.27454 303.83148 192.75591 c
+303.83148 195.23727 301.81995 197.24883 299.33859 197.24883 c
+296.85721 197.24883 294.84567 195.23727 294.84567 192.75591 c
+294.84567 190.27454 296.85721 188.26299 299.33859 188.26299 c
+f
+299.33859 169.55434 m
+301.81995 169.55434 303.83148 171.56587 303.83148 174.04724 c
+303.83148 176.52861 301.81995 178.54016 299.33859 178.54016 c
+296.85721 178.54016 294.84567 176.52861 294.84567 174.04724 c
+294.84567 171.56587 296.85721 169.55434 299.33859 169.55434 c
+f
+299.33859 150.84567 m
+301.81995 150.84567 303.83148 152.85721 303.83148 155.33858 c
+303.83148 157.81995 301.81995 159.8315 299.33859 159.8315 c
+296.85721 159.8315 294.84567 157.81995 294.84567 155.33858 c
+294.84567 152.85721 296.85721 150.84567 299.33859 150.84567 c
+f
+299.33859 132.13701 m
+301.81995 132.13701 303.83148 134.14856 303.83148 136.62993 c
+303.83148 139.11128 301.81995 141.12283 299.33859 141.12283 c
+296.85721 141.12283 294.84567 139.11128 294.84567 136.62993 c
+294.84567 134.14856 296.85721 132.13701 299.33859 132.13701 c
+f
+280.62991 357.98001 m
+282.37173 357.98001 283.78378 359.39203 283.78378 361.13385 c
+283.78378 362.87567 282.37173 364.28772 280.62991 364.28772 c
+278.88809 364.28772 277.47607 362.87567 277.47607 361.13385 c
+277.47607 359.39203 278.88809 357.98001 280.62991 357.98001 c
+f
+280.62991 337.93228 m
+283.1113 337.93228 285.12283 339.94382 285.12283 342.4252 c
+285.12283 344.90656 283.1113 346.91812 280.62991 346.91812 c
+278.14856 346.91812 276.13699 344.90656 276.13699 342.4252 c
+276.13699 339.94382 278.14856 337.93228 280.62991 337.93228 c
+f
+280.62991 319.22363 m
+283.1113 319.22363 285.12283 321.23517 285.12283 323.71652 c
+285.12283 326.19791 283.1113 328.20944 280.62991 328.20944 c
+278.14856 328.20944 276.13699 326.19791 276.13699 323.71652 c
+276.13699 321.23517 278.14856 319.22363 280.62991 319.22363 c
+f
+280.62991 300.51495 m
+283.1113 300.51495 285.12283 302.52652 285.12283 305.00787 c
+285.12283 307.48923 283.1113 309.50079 280.62991 309.50079 c
+278.14856 309.50079 276.13699 307.48923 276.13699 305.00787 c
+276.13699 302.52652 278.14856 300.51495 280.62991 300.51495 c
+f
+280.62991 281.8063 m
+283.1113 281.8063 285.12283 283.81784 285.12283 286.29922 c
+285.12283 288.78058 283.1113 290.79211 280.62991 290.79211 c
+278.14856 290.79211 276.13699 288.78058 276.13699 286.29922 c
+276.13699 283.81784 278.14856 281.8063 280.62991 281.8063 c
+f
+280.62991 263.09763 m
+283.1113 263.09763 285.12283 265.10919 285.12283 267.59055 c
+285.12283 270.07193 283.1113 272.08347 280.62991 272.08347 c
+278.14856 272.08347 276.13699 270.07193 276.13699 267.59055 c
+276.13699 265.10919 278.14856 263.09763 280.62991 263.09763 c
+f
+280.62991 244.38898 m
+283.1113 244.38898 285.12283 246.40053 285.12283 248.8819 c
+285.12283 251.36325 283.1113 253.3748 280.62991 253.3748 c
+278.14856 253.3748 276.13699 251.36325 276.13699 248.8819 c
+276.13699 246.40053 278.14856 244.38898 280.62991 244.38898 c
+f
+280.62991 225.68031 m
+283.1113 225.68031 285.12283 227.69186 285.12283 230.17323 c
+285.12283 232.6546 283.1113 234.66614 280.62991 234.66614 c
+278.14856 234.66614 276.13699 232.6546 276.13699 230.17323 c
+276.13699 227.69186 278.14856 225.68031 280.62991 225.68031 c
+f
+280.62991 206.97165 m
+283.1113 206.97165 285.12283 208.9832 285.12283 211.46457 c
+285.12283 213.94594 283.1113 215.95747 280.62991 215.95747 c
+278.14856 215.95747 276.13699 213.94594 276.13699 211.46457 c
+276.13699 208.9832 278.14856 206.97165 280.62991 206.97165 c
+f
+280.62991 188.26299 m
+283.1113 188.26299 285.12283 190.27454 285.12283 192.75591 c
+285.12283 195.23727 283.1113 197.24883 280.62991 197.24883 c
+278.14856 197.24883 276.13699 195.23727 276.13699 192.75591 c
+276.13699 190.27454 278.14856 188.26299 280.62991 188.26299 c
+f
+280.62991 169.55434 m
+283.1113 169.55434 285.12283 171.56587 285.12283 174.04724 c
+285.12283 176.52861 283.1113 178.54016 280.62991 178.54016 c
+278.14856 178.54016 276.13699 176.52861 276.13699 174.04724 c
+276.13699 171.56587 278.14856 169.55434 280.62991 169.55434 c
+f
+280.62991 150.84567 m
+283.1113 150.84567 285.12283 152.85721 285.12283 155.33858 c
+285.12283 157.81995 283.1113 159.8315 280.62991 159.8315 c
+278.14856 159.8315 276.13699 157.81995 276.13699 155.33858 c
+276.13699 152.85721 278.14856 150.84567 280.62991 150.84567 c
+f
+280.62991 132.13701 m
+283.1113 132.13701 285.12283 134.14856 285.12283 136.62993 c
+285.12283 139.11128 283.1113 141.12283 280.62991 141.12283 c
+278.14856 141.12283 276.13699 139.11128 276.13699 136.62993 c
+276.13699 134.14856 278.14856 132.13701 280.62991 132.13701 c
+f
+261.92126 357.98001 m
+263.66309 357.98001 265.0751 359.39203 265.0751 361.13385 c
+265.0751 362.87567 263.66309 364.28772 261.92126 364.28772 c
+260.17944 364.28772 258.76743 362.87567 258.76743 361.13385 c
+258.76743 359.39203 260.17944 357.98001 261.92126 357.98001 c
+f
+261.92126 337.93228 m
+264.40262 337.93228 266.41418 339.94382 266.41418 342.4252 c
+266.41418 344.90656 264.40262 346.91812 261.92126 346.91812 c
+259.43988 346.91812 257.42834 344.90656 257.42834 342.4252 c
+257.42834 339.94382 259.43988 337.93228 261.92126 337.93228 c
+f
+261.92126 319.22363 m
+264.40262 319.22363 266.41418 321.23517 266.41418 323.71652 c
+266.41418 326.19791 264.40262 328.20944 261.92126 328.20944 c
+259.43988 328.20944 257.42834 326.19791 257.42834 323.71652 c
+257.42834 321.23517 259.43988 319.22363 261.92126 319.22363 c
+f
+261.92126 300.51495 m
+264.40262 300.51495 266.41418 302.52652 266.41418 305.00787 c
+266.41418 307.48923 264.40262 309.50079 261.92126 309.50079 c
+259.43988 309.50079 257.42834 307.48923 257.42834 305.00787 c
+257.42834 302.52652 259.43988 300.51495 261.92126 300.51495 c
+f
+261.92126 281.8063 m
+264.40262 281.8063 266.41418 283.81784 266.41418 286.29922 c
+266.41418 288.78058 264.40262 290.79211 261.92126 290.79211 c
+259.43988 290.79211 257.42834 288.78058 257.42834 286.29922 c
+257.42834 283.81784 259.43988 281.8063 261.92126 281.8063 c
+f
+261.92126 263.09763 m
+264.40262 263.09763 266.41418 265.10919 266.41418 267.59055 c
+266.41418 270.07193 264.40262 272.08347 261.92126 272.08347 c
+259.43988 272.08347 257.42834 270.07193 257.42834 267.59055 c
+257.42834 265.10919 259.43988 263.09763 261.92126 263.09763 c
+f
+261.92126 244.38898 m
+264.40262 244.38898 266.41418 246.40053 266.41418 248.8819 c
+266.41418 251.36325 264.40262 253.3748 261.92126 253.3748 c
+259.43988 253.3748 257.42834 251.36325 257.42834 248.8819 c
+257.42834 246.40053 259.43988 244.38898 261.92126 244.38898 c
+f
+261.92126 225.68031 m
+264.40262 225.68031 266.41418 227.69186 266.41418 230.17323 c
+266.41418 232.6546 264.40262 234.66614 261.92126 234.66614 c
+259.43988 234.66614 257.42834 232.6546 257.42834 230.17323 c
+257.42834 227.69186 259.43988 225.68031 261.92126 225.68031 c
+f
+261.92126 206.97165 m
+264.40262 206.97165 266.41418 208.9832 266.41418 211.46457 c
+266.41418 213.94594 264.40262 215.95747 261.92126 215.95747 c
+259.43988 215.95747 257.42834 213.94594 257.42834 211.46457 c
+257.42834 208.9832 259.43988 206.97165 261.92126 206.97165 c
+f
+261.92126 188.26299 m
+264.40262 188.26299 266.41418 190.27454 266.41418 192.75591 c
+266.41418 195.23727 264.40262 197.24883 261.92126 197.24883 c
+259.43988 197.24883 257.42834 195.23727 257.42834 192.75591 c
+257.42834 190.27454 259.43988 188.26299 261.92126 188.26299 c
+f
+261.92126 169.55434 m
+264.40262 169.55434 266.41418 171.56587 266.41418 174.04724 c
+266.41418 176.52861 264.40262 178.54016 261.92126 178.54016 c
+259.43988 178.54016 257.42834 176.52861 257.42834 174.04724 c
+257.42834 171.56587 259.43988 169.55434 261.92126 169.55434 c
+f
+261.92126 150.84567 m
+264.40262 150.84567 266.41418 152.85721 266.41418 155.33858 c
+266.41418 157.81995 264.40262 159.8315 261.92126 159.8315 c
+259.43988 159.8315 257.42834 157.81995 257.42834 155.33858 c
+257.42834 152.85721 259.43988 150.84567 261.92126 150.84567 c
+f
+261.92126 132.13701 m
+264.40262 132.13701 266.41418 134.14856 266.41418 136.62993 c
+266.41418 139.11128 264.40262 141.12283 261.92126 141.12283 c
+259.43988 141.12283 257.42834 139.11128 257.42834 136.62993 c
+257.42834 134.14856 259.43988 132.13701 261.92126 132.13701 c
+f
+224.50394 206.97165 m
+226.98531 206.97165 228.99686 208.9832 228.99686 211.46457 c
+228.99686 213.94594 226.98531 215.95747 224.50394 215.95747 c
+222.02257 215.95747 220.01102 213.94594 220.01102 211.46457 c
+220.01102 208.9832 222.02257 206.97165 224.50394 206.97165 c
+f
+224.50394 188.26299 m
+226.98531 188.26299 228.99686 190.27454 228.99686 192.75591 c
+228.99686 195.23727 226.98531 197.24883 224.50394 197.24883 c
+222.02257 197.24883 220.01102 195.23727 220.01102 192.75591 c
+220.01102 190.27454 222.02257 188.26299 224.50394 188.26299 c
+f
+224.50394 172.30293 m
+225.46729 172.30293 226.24825 173.08389 226.24825 174.04724 c
+226.24825 175.0106 225.46729 175.79155 224.50394 175.79155 c
+223.54059 175.79155 222.75963 175.0106 222.75963 174.04724 c
+222.75963 173.08389 223.54059 172.30293 224.50394 172.30293 c
+f
+205.79527 319.22363 m
+208.27664 319.22363 210.28819 321.23517 210.28819 323.71652 c
+210.28819 326.19791 208.27664 328.20944 205.79527 328.20944 c
+203.3139 328.20944 201.30237 326.19791 201.30237 323.71652 c
+201.30237 321.23517 203.3139 319.22363 205.79527 319.22363 c
+f
+205.79527 300.51495 m
+208.27664 300.51495 210.28819 302.52652 210.28819 305.00787 c
+210.28819 307.48923 208.27664 309.50079 205.79527 309.50079 c
+203.3139 309.50079 201.30237 307.48923 201.30237 305.00787 c
+201.30237 302.52652 203.3139 300.51495 205.79527 300.51495 c
+f
+205.79527 248.7057 m
+205.89258 248.7057 205.97147 248.78458 205.97147 248.8819 c
+205.97147 248.9792 205.89258 249.05807 205.79527 249.05807 c
+205.69797 249.05807 205.61908 248.9792 205.61908 248.8819 c
+205.61908 248.78458 205.69797 248.7057 205.79527 248.7057 c
+f
+205.79527 225.68031 m
+208.27664 225.68031 210.28819 227.69186 210.28819 230.17323 c
+210.28819 232.6546 208.27664 234.66614 205.79527 234.66614 c
+203.3139 234.66614 201.30237 232.6546 201.30237 230.17323 c
+201.30237 227.69186 203.3139 225.68031 205.79527 225.68031 c
+f
+205.79527 206.97165 m
+208.27664 206.97165 210.28819 208.9832 210.28819 211.46457 c
+210.28819 213.94594 208.27664 215.95747 205.79527 215.95747 c
+203.3139 215.95747 201.30237 213.94594 201.30237 211.46457 c
+201.30237 208.9832 203.3139 206.97165 205.79527 206.97165 c
+f
+205.79527 188.26299 m
+208.27664 188.26299 210.28819 190.27454 210.28819 192.75591 c
+210.28819 195.23727 208.27664 197.24883 205.79527 197.24883 c
+203.3139 197.24883 201.30237 195.23727 201.30237 192.75591 c
+201.30237 190.27454 203.3139 188.26299 205.79527 188.26299 c
+f
+205.79527 169.55434 m
+208.27664 169.55434 210.28819 171.56587 210.28819 174.04724 c
+210.28819 176.52861 208.27664 178.54016 205.79527 178.54016 c
+203.3139 178.54016 201.30237 176.52861 201.30237 174.04724 c
+201.30237 171.56587 203.3139 169.55434 205.79527 169.55434 c
+f
+205.79527 150.84567 m
+208.27664 150.84567 210.28819 152.85721 210.28819 155.33858 c
+210.28819 157.81995 208.27664 159.8315 205.79527 159.8315 c
+203.3139 159.8315 201.30237 157.81995 201.30237 155.33858 c
+201.30237 152.85721 203.3139 150.84567 205.79527 150.84567 c
+f
+187.08661 337.93228 m
+189.56798 337.93228 191.57953 339.94382 191.57953 342.4252 c
+191.57953 344.90656 189.56798 346.91812 187.08661 346.91812 c
+184.60524 346.91812 182.5937 344.90656 182.5937 342.4252 c
+182.5937 339.94382 184.60524 337.93228 187.08661 337.93228 c
+f
+187.08661 319.22363 m
+189.56798 319.22363 191.57953 321.23517 191.57953 323.71652 c
+191.57953 326.19791 189.56798 328.20944 187.08661 328.20944 c
+184.60524 328.20944 182.5937 326.19791 182.5937 323.71652 c
+182.5937 321.23517 184.60524 319.22363 187.08661 319.22363 c
+f
+187.08661 300.51495 m
+189.56798 300.51495 191.57953 302.52652 191.57953 305.00787 c
+191.57953 307.48923 189.56798 309.50079 187.08661 309.50079 c
+184.60524 309.50079 182.5937 307.48923 182.5937 305.00787 c
+182.5937 302.52652 184.60524 300.51495 187.08661 300.51495 c
+f
+187.08661 244.38898 m
+189.56798 244.38898 191.57953 246.40053 191.57953 248.8819 c
+191.57953 251.36325 189.56798 253.3748 187.08661 253.3748 c
+184.60524 253.3748 182.5937 251.36325 182.5937 248.8819 c
+182.5937 246.40053 184.60524 244.38898 187.08661 244.38898 c
+f
+187.08661 225.68031 m
+189.56798 225.68031 191.57953 227.69186 191.57953 230.17323 c
+191.57953 232.6546 189.56798 234.66614 187.08661 234.66614 c
+184.60524 234.66614 182.5937 232.6546 182.5937 230.17323 c
+182.5937 227.69186 184.60524 225.68031 187.08661 225.68031 c
+f
+187.08661 206.97165 m
+189.56798 206.97165 191.57953 208.9832 191.57953 211.46457 c
+191.57953 213.94594 189.56798 215.95747 187.08661 215.95747 c
+184.60524 215.95747 182.5937 213.94594 182.5937 211.46457 c
+182.5937 208.9832 184.60524 206.97165 187.08661 206.97165 c
+f
+187.08661 188.26299 m
+189.56798 188.26299 191.57953 190.27454 191.57953 192.75591 c
+191.57953 195.23727 189.56798 197.24883 187.08661 197.24883 c
+184.60524 197.24883 182.5937 195.23727 182.5937 192.75591 c
+182.5937 190.27454 184.60524 188.26299 187.08661 188.26299 c
+f
+187.08661 169.55434 m
+189.56798 169.55434 191.57953 171.56587 191.57953 174.04724 c
+191.57953 176.52861 189.56798 178.54016 187.08661 178.54016 c
+184.60524 178.54016 182.5937 176.52861 182.5937 174.04724 c
+182.5937 171.56587 184.60524 169.55434 187.08661 169.55434 c
+f
+187.08661 150.84567 m
+189.56798 150.84567 191.57953 152.85721 191.57953 155.33858 c
+191.57953 157.81995 189.56798 159.8315 187.08661 159.8315 c
+184.60524 159.8315 182.5937 157.81995 182.5937 155.33858 c
+182.5937 152.85721 184.60524 150.84567 187.08661 150.84567 c
+f
+187.08661 132.13701 m
+189.56798 132.13701 191.57953 134.14856 191.57953 136.62993 c
+191.57953 139.11128 189.56798 141.12283 187.08661 141.12283 c
+184.60524 141.12283 182.5937 139.11128 182.5937 136.62993 c
+182.5937 134.14856 184.60524 132.13701 187.08661 132.13701 c
+f
+168.37796 337.93228 m
+170.85931 337.93228 172.87086 339.94382 172.87086 342.4252 c
+172.87086 344.90656 170.85931 346.91812 168.37796 346.91812 c
+165.89659 346.91812 163.88504 344.90656 163.88504 342.4252 c
+163.88504 339.94382 165.89659 337.93228 168.37796 337.93228 c
+f
+168.37796 319.22363 m
+170.85931 319.22363 172.87086 321.23517 172.87086 323.71652 c
+172.87086 326.19791 170.85931 328.20944 168.37796 328.20944 c
+165.89659 328.20944 163.88504 326.19791 163.88504 323.71652 c
+163.88504 321.23517 165.89659 319.22363 168.37796 319.22363 c
+f
+168.37796 300.51495 m
+170.85931 300.51495 172.87086 302.52652 172.87086 305.00787 c
+172.87086 307.48923 170.85931 309.50079 168.37796 309.50079 c
+165.89659 309.50079 163.88504 307.48923 163.88504 305.00787 c
+163.88504 302.52652 165.89659 300.51495 168.37796 300.51495 c
+f
+168.37796 244.38898 m
+170.85931 244.38898 172.87086 246.40053 172.87086 248.8819 c
+172.87086 251.36325 170.85931 253.3748 168.37796 253.3748 c
+165.89659 253.3748 163.88504 251.36325 163.88504 248.8819 c
+163.88504 246.40053 165.89659 244.38898 168.37796 244.38898 c
+f
+168.37796 225.68031 m
+170.85931 225.68031 172.87086 227.69186 172.87086 230.17323 c
+172.87086 232.6546 170.85931 234.66614 168.37796 234.66614 c
+165.89659 234.66614 163.88504 232.6546 163.88504 230.17323 c
+163.88504 227.69186 165.89659 225.68031 168.37796 225.68031 c
+f
+168.37796 206.97165 m
+170.85931 206.97165 172.87086 208.9832 172.87086 211.46457 c
+172.87086 213.94594 170.85931 215.95747 168.37796 215.95747 c
+165.89659 215.95747 163.88504 213.94594 163.88504 211.46457 c
+163.88504 208.9832 165.89659 206.97165 168.37796 206.97165 c
+f
+168.37796 188.26299 m
+170.85931 188.26299 172.87086 190.27454 172.87086 192.75591 c
+172.87086 195.23727 170.85931 197.24883 168.37796 197.24883 c
+165.89659 197.24883 163.88504 195.23727 163.88504 192.75591 c
+163.88504 190.27454 165.89659 188.26299 168.37796 188.26299 c
+f
+168.37796 169.55434 m
+170.85931 169.55434 172.87086 171.56587 172.87086 174.04724 c
+172.87086 176.52861 170.85931 178.54016 168.37796 178.54016 c
+165.89659 178.54016 163.88504 176.52861 163.88504 174.04724 c
+163.88504 171.56587 165.89659 169.55434 168.37796 169.55434 c
+f
+168.37796 150.84567 m
+170.85931 150.84567 172.87086 152.85721 172.87086 155.33858 c
+172.87086 157.81995 170.85931 159.8315 168.37796 159.8315 c
+165.89659 159.8315 163.88504 157.81995 163.88504 155.33858 c
+163.88504 152.85721 165.89659 150.84567 168.37796 150.84567 c
+f
+168.37796 132.13701 m
+170.85931 132.13701 172.87086 134.14856 172.87086 136.62993 c
+172.87086 139.11128 170.85931 141.12283 168.37796 141.12283 c
+165.89659 141.12283 163.88504 139.11128 163.88504 136.62993 c
+163.88504 134.14856 165.89659 132.13701 168.37796 132.13701 c
+f
+149.6693 356.64093 m
+152.15067 356.64093 154.1622 358.6525 154.1622 361.13385 c
+154.1622 363.61523 152.15067 365.62677 149.6693 365.62677 c
+147.18793 365.62677 145.17638 363.61523 145.17638 361.13385 c
+145.17638 358.6525 147.18793 356.64093 149.6693 356.64093 c
+f
+149.6693 337.93228 m
+152.15067 337.93228 154.1622 339.94382 154.1622 342.4252 c
+154.1622 344.90656 152.15067 346.91812 149.6693 346.91812 c
+147.18793 346.91812 145.17638 344.90656 145.17638 342.4252 c
+145.17638 339.94382 147.18793 337.93228 149.6693 337.93228 c
+f
+149.6693 319.22363 m
+152.15067 319.22363 154.1622 321.23517 154.1622 323.71652 c
+154.1622 326.19791 152.15067 328.20944 149.6693 328.20944 c
+147.18793 328.20944 145.17638 326.19791 145.17638 323.71652 c
+145.17638 321.23517 147.18793 319.22363 149.6693 319.22363 c
+f
+149.6693 300.77924 m
+152.0047 300.77924 153.89792 302.67245 153.89792 305.00787 c
+153.89792 307.34329 152.0047 309.23651 149.6693 309.23651 c
+147.33389 309.23651 145.44067 307.34329 145.44067 305.00787 c
+145.44067 302.67245 147.33389 300.77924 149.6693 300.77924 c
+f
+149.6693 263.09763 m
+152.15067 263.09763 154.1622 265.10919 154.1622 267.59055 c
+154.1622 270.07193 152.15067 272.08347 149.6693 272.08347 c
+147.18793 272.08347 145.17638 270.07193 145.17638 267.59055 c
+145.17638 265.10919 147.18793 263.09763 149.6693 263.09763 c
+f
+149.6693 244.38898 m
+152.15067 244.38898 154.1622 246.40053 154.1622 248.8819 c
+154.1622 251.36325 152.15067 253.3748 149.6693 253.3748 c
+147.18793 253.3748 145.17638 251.36325 145.17638 248.8819 c
+145.17638 246.40053 147.18793 244.38898 149.6693 244.38898 c
+f
+149.6693 225.68031 m
+152.15067 225.68031 154.1622 227.69186 154.1622 230.17323 c
+154.1622 232.6546 152.15067 234.66614 149.6693 234.66614 c
+147.18793 234.66614 145.17638 232.6546 145.17638 230.17323 c
+145.17638 227.69186 147.18793 225.68031 149.6693 225.68031 c
+f
+149.6693 206.97165 m
+152.15067 206.97165 154.1622 208.9832 154.1622 211.46457 c
+154.1622 213.94594 152.15067 215.95747 149.6693 215.95747 c
+147.18793 215.95747 145.17638 213.94594 145.17638 211.46457 c
+145.17638 208.9832 147.18793 206.97165 149.6693 206.97165 c
+f
+149.6693 169.55434 m
+152.15067 169.55434 154.1622 171.56587 154.1622 174.04724 c
+154.1622 176.52861 152.15067 178.54016 149.6693 178.54016 c
+147.18793 178.54016 145.17638 176.52861 145.17638 174.04724 c
+145.17638 171.56587 147.18793 169.55434 149.6693 169.55434 c
+f
+149.6693 150.84567 m
+152.15067 150.84567 154.1622 152.85721 154.1622 155.33858 c
+154.1622 157.81995 152.15067 159.8315 149.6693 159.8315 c
+147.18793 159.8315 145.17638 157.81995 145.17638 155.33858 c
+145.17638 152.85721 147.18793 150.84567 149.6693 150.84567 c
+f
+149.6693 132.13701 m
+152.15067 132.13701 154.1622 134.14856 154.1622 136.62993 c
+154.1622 139.11128 152.15067 141.12283 149.6693 141.12283 c
+147.18793 141.12283 145.17638 139.11128 145.17638 136.62993 c
+145.17638 134.14856 147.18793 132.13701 149.6693 132.13701 c
+f
+130.96063 356.64093 m
+133.442 356.64093 135.45354 358.6525 135.45354 361.13385 c
+135.45354 363.61523 133.442 365.62677 130.96063 365.62677 c
+128.47926 365.62677 126.46772 363.61523 126.46772 361.13385 c
+126.46772 358.6525 128.47926 356.64093 130.96063 356.64093 c
+f
+130.96063 337.93228 m
+133.442 337.93228 135.45354 339.94382 135.45354 342.4252 c
+135.45354 344.90656 133.442 346.91812 130.96063 346.91812 c
+128.47926 346.91812 126.46772 344.90656 126.46772 342.4252 c
+126.46772 339.94382 128.47926 337.93228 130.96063 337.93228 c
+f
+130.96063 319.22363 m
+133.442 319.22363 135.45354 321.23517 135.45354 323.71652 c
+135.45354 326.19791 133.442 328.20944 130.96063 328.20944 c
+128.47926 328.20944 126.46772 326.19791 126.46772 323.71652 c
+126.46772 321.23517 128.47926 319.22363 130.96063 319.22363 c
+f
+130.96063 263.09763 m
+133.442 263.09763 135.45354 265.10919 135.45354 267.59055 c
+135.45354 270.07193 133.442 272.08347 130.96063 272.08347 c
+128.47926 272.08347 126.46772 270.07193 126.46772 267.59055 c
+126.46772 265.10919 128.47926 263.09763 130.96063 263.09763 c
+f
+130.96063 244.38898 m
+133.442 244.38898 135.45354 246.40053 135.45354 248.8819 c
+135.45354 251.36325 133.442 253.3748 130.96063 253.3748 c
+128.47926 253.3748 126.46772 251.36325 126.46772 248.8819 c
+126.46772 246.40053 128.47926 244.38898 130.96063 244.38898 c
+f
+130.96063 225.68031 m
+133.442 225.68031 135.45354 227.69186 135.45354 230.17323 c
+135.45354 232.6546 133.442 234.66614 130.96063 234.66614 c
+128.47926 234.66614 126.46772 232.6546 126.46772 230.17323 c
+126.46772 227.69186 128.47926 225.68031 130.96063 225.68031 c
+f
+130.96063 206.97165 m
+133.442 206.97165 135.45354 208.9832 135.45354 211.46457 c
+135.45354 213.94594 133.442 215.95747 130.96063 215.95747 c
+128.47926 215.95747 126.46772 213.94594 126.46772 211.46457 c
+126.46772 208.9832 128.47926 206.97165 130.96063 206.97165 c
+f
+130.96063 150.84567 m
+133.442 150.84567 135.45354 152.85721 135.45354 155.33858 c
+135.45354 157.81995 133.442 159.8315 130.96063 159.8315 c
+128.47926 159.8315 126.46772 157.81995 126.46772 155.33858 c
+126.46772 152.85721 128.47926 150.84567 130.96063 150.84567 c
+f
+130.96063 132.13701 m
+133.442 132.13701 135.45354 134.14856 135.45354 136.62993 c
+135.45354 139.11128 133.442 141.12283 130.96063 141.12283 c
+128.47926 141.12283 126.46772 139.11128 126.46772 136.62993 c
+126.46772 134.14856 128.47926 132.13701 130.96063 132.13701 c
+f
+130.96063 114.52074 m
+132.83868 114.52074 134.36115 116.04321 134.36115 117.92126 c
+134.36115 119.79932 132.83868 121.32178 130.96063 121.32178 c
+129.08258 121.32178 127.56011 119.79932 127.56011 117.92126 c
+127.56011 116.04321 129.08258 114.52074 130.96063 114.52074 c
+f
+112.25197 356.64093 m
+114.73334 356.64093 116.74488 358.6525 116.74488 361.13385 c
+116.74488 363.61523 114.73334 365.62677 112.25197 365.62677 c
+109.7706 365.62677 107.75906 363.61523 107.75906 361.13385 c
+107.75906 358.6525 109.7706 356.64093 112.25197 356.64093 c
+f
+112.25197 337.93228 m
+114.73334 337.93228 116.74488 339.94382 116.74488 342.4252 c
+116.74488 344.90656 114.73334 346.91812 112.25197 346.91812 c
+109.7706 346.91812 107.75906 344.90656 107.75906 342.4252 c
+107.75906 339.94382 109.7706 337.93228 112.25197 337.93228 c
+f
+112.25197 319.22363 m
+114.73334 319.22363 116.74488 321.23517 116.74488 323.71652 c
+116.74488 326.19791 114.73334 328.20944 112.25197 328.20944 c
+109.7706 328.20944 107.75906 326.19791 107.75906 323.71652 c
+107.75906 321.23517 109.7706 319.22363 112.25197 319.22363 c
+f
+112.25197 263.09763 m
+114.73334 263.09763 116.74488 265.10919 116.74488 267.59055 c
+116.74488 270.07193 114.73334 272.08347 112.25197 272.08347 c
+109.7706 272.08347 107.75906 270.07193 107.75906 267.59055 c
+107.75906 265.10919 109.7706 263.09763 112.25197 263.09763 c
+f
+112.25197 244.38898 m
+114.73334 244.38898 116.74488 246.40053 116.74488 248.8819 c
+116.74488 251.36325 114.73334 253.3748 112.25197 253.3748 c
+109.7706 253.3748 107.75906 251.36325 107.75906 248.8819 c
+107.75906 246.40053 109.7706 244.38898 112.25197 244.38898 c
+f
+112.25197 225.68031 m
+114.73334 225.68031 116.74488 227.69186 116.74488 230.17323 c
+116.74488 232.6546 114.73334 234.66614 112.25197 234.66614 c
+109.7706 234.66614 107.75906 232.6546 107.75906 230.17323 c
+107.75906 227.69186 109.7706 225.68031 112.25197 225.68031 c
+f
+112.25197 210.97122 m
+112.52443 210.97122 112.74531 211.19211 112.74531 211.46457 c
+112.74531 211.73703 112.52443 211.9579 112.25197 211.9579 c
+111.97951 211.9579 111.75863 211.73703 111.75863 211.46457 c
+111.75863 211.19211 111.97951 210.97122 112.25197 210.97122 c
+f
+112.25197 150.84567 m
+114.73334 150.84567 116.74488 152.85721 116.74488 155.33858 c
+116.74488 157.81995 114.73334 159.8315 112.25197 159.8315 c
+109.7706 159.8315 107.75906 157.81995 107.75906 155.33858 c
+107.75906 152.85721 109.7706 150.84567 112.25197 150.84567 c
+f
+112.25197 132.13701 m
+114.73334 132.13701 116.74488 134.14856 116.74488 136.62993 c
+116.74488 139.11128 114.73334 141.12283 112.25197 141.12283 c
+109.7706 141.12283 107.75906 139.11128 107.75906 136.62993 c
+107.75906 134.14856 109.7706 132.13701 112.25197 132.13701 c
+f
+112.25197 114.97884 m
+113.87702 114.97884 115.19439 116.2962 115.19439 117.92126 c
+115.19439 119.54631 113.87702 120.86368 112.25197 120.86368 c
+110.62691 120.86368 109.30955 119.54631 109.30955 117.92126 c
+109.30955 116.2962 110.62691 114.97884 112.25197 114.97884 c
+f
+93.543304 356.64093 m
+96.024673 356.64093 98.036217 358.6525 98.036217 361.13385 c
+98.036217 363.61523 96.024673 365.62677 93.543304 365.62677 c
+91.061943 365.62677 89.050392 363.61523 89.050392 361.13385 c
+89.050392 358.6525 91.061943 356.64093 93.543304 356.64093 c
+f
+93.543304 337.93228 m
+96.024673 337.93228 98.036217 339.94382 98.036217 342.4252 c
+98.036217 344.90656 96.024673 346.91812 93.543304 346.91812 c
+91.061943 346.91812 89.050392 344.90656 89.050392 342.4252 c
+89.050392 339.94382 91.061943 337.93228 93.543304 337.93228 c
+f
+93.543304 319.22363 m
+96.024673 319.22363 98.036217 321.23517 98.036217 323.71652 c
+98.036217 326.19791 96.024673 328.20944 93.543304 328.20944 c
+91.061943 328.20944 89.050392 326.19791 89.050392 323.71652 c
+89.050392 321.23517 91.061943 319.22363 93.543304 319.22363 c
+f
+93.543304 300.51495 m
+96.024673 300.51495 98.036217 302.52652 98.036217 305.00787 c
+98.036217 307.48923 96.024673 309.50079 93.543304 309.50079 c
+91.061943 309.50079 89.050392 307.48923 89.050392 305.00787 c
+89.050392 302.52652 91.061943 300.51495 93.543304 300.51495 c
+f
+93.543304 281.8063 m
+96.024673 281.8063 98.036217 283.81784 98.036217 286.29922 c
+98.036217 288.78058 96.024673 290.79211 93.543304 290.79211 c
+91.061943 290.79211 89.050392 288.78058 89.050392 286.29922 c
+89.050392 283.81784 91.061943 281.8063 93.543304 281.8063 c
+f
+93.543304 263.09763 m
+96.024673 263.09763 98.036217 265.10919 98.036217 267.59055 c
+98.036217 270.07193 96.024673 272.08347 93.543304 272.08347 c
+91.061943 272.08347 89.050392 270.07193 89.050392 267.59055 c
+89.050392 265.10919 91.061943 263.09763 93.543304 263.09763 c
+f
+93.543304 244.38898 m
+96.024673 244.38898 98.036217 246.40053 98.036217 248.8819 c
+98.036217 251.36325 96.024673 253.3748 93.543304 253.3748 c
+91.061943 253.3748 89.050392 251.36325 89.050392 248.8819 c
+89.050392 246.40053 91.061943 244.38898 93.543304 244.38898 c
+f
+93.543304 225.68031 m
+96.024673 225.68031 98.036217 227.69186 98.036217 230.17323 c
+98.036217 232.6546 96.024673 234.66614 93.543304 234.66614 c
+91.061943 234.66614 89.050392 232.6546 89.050392 230.17323 c
+89.050392 227.69186 91.061943 225.68031 93.543304 225.68031 c
+f
+93.543304 169.55434 m
+96.024673 169.55434 98.036217 171.56587 98.036217 174.04724 c
+98.036217 176.52861 96.024673 178.54016 93.543304 178.54016 c
+91.061943 178.54016 89.050392 176.52861 89.050392 174.04724 c
+89.050392 171.56587 91.061943 169.55434 93.543304 169.55434 c
+f
+93.543304 150.84567 m
+96.024673 150.84567 98.036217 152.85721 98.036217 155.33858 c
+98.036217 157.81995 96.024673 159.8315 93.543304 159.8315 c
+91.061943 159.8315 89.050392 157.81995 89.050392 155.33858 c
+89.050392 152.85721 91.061943 150.84567 93.543304 150.84567 c
+f
+93.543304 132.13701 m
+96.024673 132.13701 98.036217 134.14856 98.036217 136.62993 c
+98.036217 139.11128 96.024673 141.12283 93.543304 141.12283 c
+91.061943 141.12283 89.050392 139.11128 89.050392 136.62993 c
+89.050392 134.14856 91.061943 132.13701 93.543304 132.13701 c
+f
+74.834648 337.93228 m
+77.31601 337.93228 79.32756 339.94382 79.32756 342.4252 c
+79.32756 344.90656 77.31601 346.91812 74.834648 346.91812 c
+72.353279 346.91812 70.341736 344.90656 70.341736 342.4252 c
+70.341736 339.94382 72.353279 337.93228 74.834648 337.93228 c
+f
+74.834648 319.22363 m
+77.31601 319.22363 79.32756 321.23517 79.32756 323.71652 c
+79.32756 326.19791 77.31601 328.20944 74.834648 328.20944 c
+72.353279 328.20944 70.341736 326.19791 70.341736 323.71652 c
+70.341736 321.23517 72.353279 319.22363 74.834648 319.22363 c
+f
+74.834648 300.51495 m
+77.31601 300.51495 79.32756 302.52652 79.32756 305.00787 c
+79.32756 307.48923 77.31601 309.50079 74.834648 309.50079 c
+72.353279 309.50079 70.341736 307.48923 70.341736 305.00787 c
+70.341736 302.52652 72.353279 300.51495 74.834648 300.51495 c
+f
+74.834648 281.8063 m
+77.31601 281.8063 79.32756 283.81784 79.32756 286.29922 c
+79.32756 288.78058 77.31601 290.79211 74.834648 290.79211 c
+72.353279 290.79211 70.341736 288.78058 70.341736 286.29922 c
+70.341736 283.81784 72.353279 281.8063 74.834648 281.8063 c
+f
+74.834648 263.09763 m
+77.31601 263.09763 79.32756 265.10919 79.32756 267.59055 c
+79.32756 270.07193 77.31601 272.08347 74.834648 272.08347 c
+72.353279 272.08347 70.341736 270.07193 70.341736 267.59055 c
+70.341736 265.10919 72.353279 263.09763 74.834648 263.09763 c
+f
+74.834648 244.38898 m
+77.31601 244.38898 79.32756 246.40053 79.32756 248.8819 c
+79.32756 251.36325 77.31601 253.3748 74.834648 253.3748 c
+72.353279 253.3748 70.341736 251.36325 70.341736 248.8819 c
+70.341736 246.40053 72.353279 244.38898 74.834648 244.38898 c
+f
+74.834648 225.68031 m
+77.31601 225.68031 79.32756 227.69186 79.32756 230.17323 c
+79.32756 232.6546 77.31601 234.66614 74.834648 234.66614 c
+72.353279 234.66614 70.341736 232.6546 70.341736 230.17323 c
+70.341736 227.69186 72.353279 225.68031 74.834648 225.68031 c
+f
+74.834648 190.94112 m
+75.836922 190.94112 76.649429 191.75363 76.649429 192.75591 c
+76.649429 193.75818 75.836922 194.57069 74.834648 194.57069 c
+73.832367 194.57069 73.019859 193.75818 73.019859 192.75591 c
+73.019859 191.75363 73.832367 190.94112 74.834648 190.94112 c
+f
+74.834648 169.55434 m
+77.31601 169.55434 79.32756 171.56587 79.32756 174.04724 c
+79.32756 176.52861 77.31601 178.54016 74.834648 178.54016 c
+72.353279 178.54016 70.341736 176.52861 70.341736 174.04724 c
+70.341736 171.56587 72.353279 169.55434 74.834648 169.55434 c
+f
+74.834648 150.84567 m
+77.31601 150.84567 79.32756 152.85721 79.32756 155.33858 c
+79.32756 157.81995 77.31601 159.8315 74.834648 159.8315 c
+72.353279 159.8315 70.341736 157.81995 70.341736 155.33858 c
+70.341736 152.85721 72.353279 150.84567 74.834648 150.84567 c
+f
+74.834648 132.13701 m
+77.31601 132.13701 79.32756 134.14856 79.32756 136.62993 c
+79.32756 139.11128 77.31601 141.12283 74.834648 141.12283 c
+72.353279 141.12283 70.341736 139.11128 70.341736 136.62993 c
+70.341736 134.14856 72.353279 132.13701 74.834648 132.13701 c
+f
+56.125984 337.93228 m
+58.607353 337.93228 60.618896 339.94382 60.618896 342.4252 c
+60.618896 344.90656 58.607353 346.91812 56.125984 346.91812 c
+53.644615 346.91812 51.633072 344.90656 51.633072 342.4252 c
+51.633072 339.94382 53.644615 337.93228 56.125984 337.93228 c
+f
+56.125984 319.22363 m
+58.607353 319.22363 60.618896 321.23517 60.618896 323.71652 c
+60.618896 326.19791 58.607353 328.20944 56.125984 328.20944 c
+53.644615 328.20944 51.633072 326.19791 51.633072 323.71652 c
+51.633072 321.23517 53.644615 319.22363 56.125984 319.22363 c
+f
+56.125984 300.51495 m
+58.607353 300.51495 60.618896 302.52652 60.618896 305.00787 c
+60.618896 307.48923 58.607353 309.50079 56.125984 309.50079 c
+53.644615 309.50079 51.633072 307.48923 51.633072 305.00787 c
+51.633072 302.52652 53.644615 300.51495 56.125984 300.51495 c
+f
+56.125984 281.8063 m
+58.607353 281.8063 60.618896 283.81784 60.618896 286.29922 c
+60.618896 288.78058 58.607353 290.79211 56.125984 290.79211 c
+53.644615 290.79211 51.633072 288.78058 51.633072 286.29922 c
+51.633072 283.81784 53.644615 281.8063 56.125984 281.8063 c
+f
+56.125984 263.09763 m
+58.607353 263.09763 60.618896 265.10919 60.618896 267.59055 c
+60.618896 270.07193 58.607353 272.08347 56.125984 272.08347 c
+53.644615 272.08347 51.633072 270.07193 51.633072 267.59055 c
+51.633072 265.10919 53.644615 263.09763 56.125984 263.09763 c
+f
+56.125984 244.38898 m
+58.607353 244.38898 60.618896 246.40053 60.618896 248.8819 c
+60.618896 251.36325 58.607353 253.3748 56.125984 253.3748 c
+53.644615 253.3748 51.633072 251.36325 51.633072 248.8819 c
+51.633072 246.40053 53.644615 244.38898 56.125984 244.38898 c
+f
+56.125984 225.68031 m
+58.607353 225.68031 60.618896 227.69186 60.618896 230.17323 c
+60.618896 232.6546 58.607353 234.66614 56.125984 234.66614 c
+53.644615 234.66614 51.633072 232.6546 51.633072 230.17323 c
+51.633072 227.69186 53.644615 225.68031 56.125984 225.68031 c
+f
+56.125984 190.94112 m
+57.128262 190.94112 57.940769 191.75363 57.940769 192.75591 c
+57.940769 193.75818 57.128262 194.57069 56.125984 194.57069 c
+55.123707 194.57069 54.311199 193.75818 54.311199 192.75591 c
+54.311199 191.75363 55.123707 190.94112 56.125984 190.94112 c
+f
+56.125984 169.55434 m
+58.607353 169.55434 60.618896 171.56587 60.618896 174.04724 c
+60.618896 176.52861 58.607353 178.54016 56.125984 178.54016 c
+53.644615 178.54016 51.633072 176.52861 51.633072 174.04724 c
+51.633072 171.56587 53.644615 169.55434 56.125984 169.55434 c
+f
+56.125984 150.84567 m
+58.607353 150.84567 60.618896 152.85721 60.618896 155.33858 c
+60.618896 157.81995 58.607353 159.8315 56.125984 159.8315 c
+53.644615 159.8315 51.633072 157.81995 51.633072 155.33858 c
+51.633072 152.85721 53.644615 150.84567 56.125984 150.84567 c
+f
+56.125984 132.13701 m
+58.607353 132.13701 60.618896 134.14856 60.618896 136.62993 c
+60.618896 139.11128 58.607353 141.12283 56.125984 141.12283 c
+53.644615 141.12283 51.633072 139.11128 51.633072 136.62993 c
+51.633072 134.14856 53.644615 132.13701 56.125984 132.13701 c
+f
+37.417324 319.22363 m
+39.898689 319.22363 41.910236 321.23517 41.910236 323.71652 c
+41.910236 326.19791 39.898689 328.20944 37.417324 328.20944 c
+34.935955 328.20944 32.924408 326.19791 32.924408 323.71652 c
+32.924408 321.23517 34.935955 319.22363 37.417324 319.22363 c
+f
+37.417324 300.51495 m
+39.898689 300.51495 41.910236 302.52652 41.910236 305.00787 c
+41.910236 307.48923 39.898689 309.50079 37.417324 309.50079 c
+34.935955 309.50079 32.924408 307.48923 32.924408 305.00787 c
+32.924408 302.52652 34.935955 300.51495 37.417324 300.51495 c
+f
+37.417324 281.8063 m
+39.898689 281.8063 41.910236 283.81784 41.910236 286.29922 c
+41.910236 288.78058 39.898689 290.79211 37.417324 290.79211 c
+34.935955 290.79211 32.924408 288.78058 32.924408 286.29922 c
+32.924408 283.81784 34.935955 281.8063 37.417324 281.8063 c
+f
+37.417324 263.09763 m
+39.898689 263.09763 41.910236 265.10919 41.910236 267.59055 c
+41.910236 270.07193 39.898689 272.08347 37.417324 272.08347 c
+34.935955 272.08347 32.924408 270.07193 32.924408 267.59055 c
+32.924408 265.10919 34.935955 263.09763 37.417324 263.09763 c
+f
+37.417324 244.38898 m
+39.898689 244.38898 41.910236 246.40053 41.910236 248.8819 c
+41.910236 251.36325 39.898689 253.3748 37.417324 253.3748 c
+34.935955 253.3748 32.924408 251.36325 32.924408 248.8819 c
+32.924408 246.40053 34.935955 244.38898 37.417324 244.38898 c
+f
+37.417324 190.94112 m
+38.419601 190.94112 39.232109 191.75363 39.232109 192.75591 c
+39.232109 193.75818 38.419601 194.57069 37.417324 194.57069 c
+36.415047 194.57069 35.602539 193.75818 35.602539 192.75591 c
+35.602539 191.75363 36.415047 190.94112 37.417324 190.94112 c
+f
+37.417324 169.55434 m
+39.898689 169.55434 41.910236 171.56587 41.910236 174.04724 c
+41.910236 176.52861 39.898689 178.54016 37.417324 178.54016 c
+34.935955 178.54016 32.924408 176.52861 32.924408 174.04724 c
+32.924408 171.56587 34.935955 169.55434 37.417324 169.55434 c
+f
+37.417324 150.84567 m
+39.898689 150.84567 41.910236 152.85721 41.910236 155.33858 c
+41.910236 157.81995 39.898689 159.8315 37.417324 159.8315 c
+34.935955 159.8315 32.924408 157.81995 32.924408 155.33858 c
+32.924408 152.85721 34.935955 150.84567 37.417324 150.84567 c
+f
+18.708662 192.63257 m
+18.776777 192.63257 18.831997 192.68779 18.831997 192.75591 c
+18.831997 192.82402 18.776777 192.87924 18.708662 192.87924 c
+18.640545 192.87924 18.585327 192.82402 18.585327 192.75591 c
+18.585327 192.68779 18.640545 192.63257 18.708662 192.63257 c
+f
+ep
+end
+%%Trailer
+%%EOF
